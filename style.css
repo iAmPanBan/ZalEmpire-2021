@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: 'rock_itregular';
+    src: url('rockit-webfont.woff2') format('woff2'),
+         url('rockit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'south_gardens_personal_useRg';
+    src: url('south_gardens_personal_use-webfont.woff2') format('woff2'),
+         url('south_gardens_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body, html {
+    width: auto;
+}
+.zal {
+    font-family: rock_itregular;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    color: #3cb043;
+}
+.header{
+    color: white;
+    font-weight: bold;
+    background-color: #2a2c2d;
+}
