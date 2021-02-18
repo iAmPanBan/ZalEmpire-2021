@@ -20,14 +20,21 @@ body, html {
 }
 .zal {
     font-family: rock_itregular;
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     padding-top: 10px;
     font-weight: bolder;
     color: #3cb043;
 }
-.header{
+.header {
     color: white;
     font-weight: bold;
     background-color: #2a2c2d;
 }
+.myform {
+    text-align: center;
+}
+.widget {
+    width: 1000px;
+}
+
