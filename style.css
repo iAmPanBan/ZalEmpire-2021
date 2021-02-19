@@ -58,7 +58,20 @@ body, html {
 .download {
     text-align: center;
     font-size: 25px;
-    font-family: serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+}
+.lorem {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0px;
+    padding: 180px 80px 20px 80px;
+    background-image: url(./images/index.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.widget-btm {
+    text-align: center;
 }
 
 /*footer*/
