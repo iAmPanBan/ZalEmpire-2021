@@ -63,11 +63,11 @@ body, html {
 }
 .lorem {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 0px;
-    padding: 180px 80px 20px 80px;
-    background-image: url(./images/index.jpg);
+    background-image: url(./images/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    padding: 115px;
+
 }
 
 .widget-btm {
@@ -109,3 +109,9 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
 .social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
 .social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
+@media only screen and (max-width: 1050px) {
+    .lorem {
+      background-image: url(./images/banner.jpg);
+      background-size: contain;
+    }
