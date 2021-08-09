@@ -1,118 +1,169 @@
+ /* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 150px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: transparent; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
 
-@font-face {
-    font-family: 'rock_itregular';
-    src: url('rockit-webfont.woff2') format('woff2'),
-         url('rockit-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
 
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
-@font-face {
-    font-family: 'south_gardens_personal_useRg';
-    src: url('south_gardens_personal_use-webfont.woff2') format('woff2'),
-         url('south_gardens_personal_use-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
 }
-body, html {
-    width: auto;
-    /* padding: 0px 50px 0 50px; */
+.sidenav img {
+width: 240px;
+height: auto;
+border-radius: 0px;
+padding: 0px 0px 20px 10px;
 }
-.zal {
-    font-family: rock_itregular;
-    font-size: 25px;
-    text-align: center;
-    padding-top: 10px;
-    font-weight: bolder;
-    color: #3cb043;
+.top {
+background-image: url(./images/background.jpg);
+background-size: cover;
+width: 100%;
+height: 100%;
 }
-.header {
-    color: white;
-    font-weight: bold;
-    background-color: #2a2c2d;
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-.myform {
-    text-align: center;
+@media screen and (min-width: 450px) {
+  .sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #7a3803; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  ;
 }
-.button {
-    background-color: lawngreen;
-    font-size: 25px;
-    border-radius: 5px;
-    color: white;
+.top {
+background-image: url(./images/bg-1.jpg);
+background-size: cover;
+width: 1198px;
+height: 630px;
 }
-.btn {
-    background-color: greenyellow !important;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+}
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #fff;
+}
+.top h1{
+text-align: center;
+padding-top: 250px;
+color: white;
+font-size: 60px;
+font-weight: 900;
+}
+body{
+height: 100vh;
+}
+#player {
+margin-left: 120px;
+position: fixed;
+bottom: 0;
+width: 75%;
+}
+#about {
+background-image: url(./images/bg-2.jpg);
+background-size: cover;
+width: 1198px;
+height: 630px;
+}
+#about h3 {
+font-size: 30px;
+color: white;
+text-align: center;
+font-weight: 800;
+padding-top: 30px;
+text-decoration: underline;
+}
+.icons{
+position: fixed;
+bottom: 15px;
+padding-left: 15px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-left: 100px;
+  margin-right: 40px;
+}
+.card h3 {
+font-weight: bold;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background-color: green !important;
-  }
-
-.download {
-    text-align: center;
-    font-size: 25px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: green;
 }
-.lorem {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-image: url(./images/banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 115px;
+}  
 
-}
-
-.widget-btm {
-    text-align: center;
-}
-
-/*footer*/
-.col_white_amrc { color:#FFF;}
-footer { width:100%; background-color:#263238; min-height:20px; padding:10px 0px 25px 0px ;}
-.pt2 { padding-top:40px ; margin-bottom:10px ;}
-footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
-.mb10 { padding-bottom:15px ;}
-.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
-.footer_ul_amrc li {padding:0px 0px 5px 0px;}
-.footer_ul_amrc li a{ color:#CCC;}
-.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
-.fleft { float:left;}
-.padding-right { padding-right:10px; }
-
-.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
-.footer_ul2_amrc li p { display:table; }
-.footer_ul2_amrc li a:hover { text-decoration:none;}
-.footer_ul2_amrc li i { margin-top:5px;}
-
-.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
-.foote_bottom_ul_amrc {
-	list-style-type:none;
-	padding:0px;
-	display:table;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	margin-left: auto;
-}
-.foote_bottom_ul_amrc li { display:inline;}
-.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
-
-.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
-.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
-.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
-.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
-
-@media only screen and (max-width: 1050px) {
-    .lorem {
-      background-image: url(./images/banner.jpg);
-      background-size: contain;
-    }
-}
