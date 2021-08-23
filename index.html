@@ -10,6 +10,7 @@
       href="mediaquery.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="blog.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -88,52 +89,40 @@
 </div> 
 
 <div id="blog">
-<section class="info">
-  <img src="./images/kalaptop.jpg">
-  <h1>ZalBlog &mdash; <a href="#" target="_blank">Check out our blog</a></h1>
-</section>
-<section class="cards-wrapper">
-  <div class="card-grid-space">
-    <div class="num">01</div>
-    <a class="card" href="#" style="--bg-img: url(./images/blog1.jpg)">
-      <div>
-        <h1>HTML Syntax</h1>
-        <p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
-        <div class="date">6 Oct 2017</div>
-        <div class="tags">
-          <div class="tag">read more...</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="card-grid-space">
-    <div class="num">02</div>
-    <a class="card" href="#" style="--bg-img: url(./images/blog2.jpg)">
-      <div>
-        <h1>Basic types of HTML tags</h1>
-        <p>Learn about some of the most common HTML tags…</p>
-        <div class="date">9 Oct 2017</div>
-        <div class="tags">
-          <div class="tag">read more...</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="card-grid-space">
-    <div class="num">03</div>
-    <a class="card" href="#" style="--bg-img: url(./images/blog3.jpg)">
-      <div>
-        <h1>Links, images and about file paths</h1>
-        <p>Learn how to use links and images along with file paths…</p>
-        <div class="date">14 Oct 2017</div>
-        <div class="tags">
-          <div class="tag">read more...</div>
-        </div>
-      </div>
-    </a>
-  </div>
+<!-- Slideshow container -->
+<div class="slideshow-container ghost">
+
+    <!-- Full images with numbers and message Info -->
+    <div class="Containers">
+      <div class="MessageInfo">1 / 3</div>
+      <img src="./images/blog1.jpg" style="height:320px">
+      <div class="Info">First caption</div>
+    </div>
   
-</section>
+    <div class="Containers">
+      <div class="MessageInfo">2 / 3</div>
+      <img src="./images/blog2.jpg" style="width:500px">
+      <div class="Info">Second Caption</div>
+    </div>
+  
+    <div class="Containers">
+      <div class="MessageInfo">3 / 3</div>
+      <img src="./images/blog3.jpg" style="width:500px">
+      <div class="Info">Third Caption</div>
+    </div>
+   
+    <!-- Back and forward buttons -->
+    <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The circles/dots -->
+  <div style="text-align:center">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+  </div> 
 </div>      
 
  
